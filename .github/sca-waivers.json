@@ -1,0 +1,9 @@
+{
+  "vulnerability1": {
+    "expiry": "2025-12-31T00:00:00Z",
+    "reason": "Not applicable",
+    "approved_by": "John Doe",
+    "approved_date": "2024-01-01",
+    "ticket": "TICK-125"
+  }
+}

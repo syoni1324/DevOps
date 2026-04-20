@@ -1,0 +1,3 @@
+Rule,Expiry,Reason,Approved_By,Approved_Date,Ticket
+ApexCRUDViolation,31-12-2025,Allowed for test data creation,John Doe,01-01-2024,TICK-123
+ApexSharingViolations,31-12-2025,Sharing rules handled elsewhere,Jane Smith,01-01-2024,TICK-124

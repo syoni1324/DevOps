@@ -1,0 +1,14 @@
+<template>
+  <lightning-card title={title}>
+    <div class="slds-p-around_medium">
+      <!-- still analyzable issues: missing alt, javascript: URL, etc. -->
+      <img src={imageUrl}>
+      <div id="dup1">First</div>
+      <div id="dup2">Second</div>
+      <a href="javascript:alert('xss')">Bad link</a>
+
+      <lightning-button label="Run" onclick={handleClick}></lightning-button>
+    </div>
+  </lightning-card>
+</template>
+
