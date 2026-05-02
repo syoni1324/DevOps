@@ -2,7 +2,7 @@ name: Self Healing Agent
 
 on:
  workflow_run: 
-  workflows: ["Main CI Pipeline]
+  workflows: ["Main CI Pipeline"]
   types:
    - completed
 jobs:
@@ -10,16 +10,16 @@ jobs:
   if: ${{ github.event.workflow_run.conclusion == 'failure' }}
   runs-on: ubuntu-latest
   steps:
-   -name: Checkout
+   - name: checkout
     uses: actions/checkout@v4
-   -name: Analyze Failure
+   - name: Analyze Failure
     run: |
      echo "reading logs"
      echo "checking common issues"
-   -name: Auto Fix example
+   - name: Auto Fix example
     run: | 
      rm -rf node_modules
      npm cache clean --force
-   -name: Auto Fix example
+   - name: Auto Fix example
     run: |
      echo "Triggering rerun"
