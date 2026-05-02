@@ -11,15 +11,15 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - name: checkout
-    uses: actions/checkout@v4
+     uses: actions/checkout@v4
    - name: Analyze Failure
-    run: |
-     echo "reading logs"
-     echo "checking common issues"
+     run: |
+      echo "reading logs"
+      echo "checking common issues"
    - name: Auto Fix example
-    run: | 
-     rm -rf node_modules
-     npm cache clean --force
+     run: | 
+      rm -rf node_modules
+      npm cache clean --force
    - name: Auto Fix example
-    run: |
-     echo "Triggering rerun"
+     run: |
+      echo "Triggering rerun"
